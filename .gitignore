@@ -9,5 +9,5 @@ __pycache__/
 *.pyc
 input.txt
 env/
-venv/tang_json/
 song_json/
+tang_json/
