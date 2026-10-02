@@ -1,6 +1,8 @@
-# Run 6: training-amount experiment — 4x longer training on the Tang+Song corpus
+# Run 6: training-amount experiment - 4x longer training on the Tang+Song corpus
 # Hypothesis: model is under-trained (Chinchilla: ~20 tokens/param = 320M tokens;
 # Run 4/5 only saw 82M). Same architecture as Run 4 baseline (depth didn't help).
+# NOTE: keep this file pure ASCII - configurator.py reads it with the system
+# locale encoding (GBK on Chinese Windows) and non-ASCII chars crash it.
 
 out_dir = 'out-poetry-long'
 eval_interval = 1000 # less frequent eval: each eval costs ~200 forward passes
